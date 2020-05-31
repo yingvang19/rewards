@@ -1,0 +1,30 @@
+/* This is for the draggable  */
+
+.drag1,.drag2,.drag3,.drag4,.drag5{
+  width: 105px;
+  height: 35px;
+  background: limegreen;
+  left: 28px;
+}
+#btn1,#btn2,#btn3,#btn4,#btn5{
+  width: 105px;
+  height: 35px;
+  background: white;
+}
+
+/* Create four equal columns that floats next to each other */
+.column{
+    padding: 25px;
+  
+}
+
+ul{
+    list-style-type: none;
+    text-align: center;
+} 
+  
+ul li {
+    margin-top: 20px;
+}
+
+  .close:hover {background: white;} 

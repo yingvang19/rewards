@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+</head>
+<body>
+
+ 
+  <div class="row">
+
+    <div class="column" style="background-color:sandybrown;">
+      <h2>Rewards</h2>
+      <p>Please Choose your Rewards</p>
+      <hr>
+
+     
+      <ul>
+        
+          <div class='drag1'>R1<span class="close">&times;</span></div>
+            <button id='btn1'>Click R1</button>
+        </li>
+
+        <li><div class='drag2'>R2  <span class="close">&times;</span></div>
+            <button id='btn2'>Click R2</button>
+        </li>
+
+        <li><div class='drag3'>R3<span class="close">&times;</span></div>
+            <button id='btn3'>Click R3</button>
+        </li>
+        
+        <li><div class='drag4'>R4<span class="close">&times;</span></div>
+            <button id='btn4'>Click R4</button>
+        </li>
+        
+        <li><div class='drag5'>R5<span class="close">&times;</span></div>
+            <button id='btn5'>Click R5</button>
+        </li>
+        
+      </ul>
+      
+    </div>
+    <div class="column" style="background-color:cornflowerblue;">
+      <h2>Column 1</h2>
+      <p>Categories</p>
+      <hr>
+    </div>
+    <div class="column" style="background-color:sandybrown;">
+      <h2>Column 2</h2>
+      <p>Categories</p>
+      <hr>
+    </div>
+    <div class="column" style="background-color:cornflowerblue;">
+      <h2>Column 3</h2>
+      <p>Categories</p>
+      <hr>
+    </div>
+    <div class="column" style="background-color:sandybrown;">
+      <h2>Column 4</h2>
+      <p>Categories</p>
+      <hr>
+    </div>
+    <div class="column" style="background-color:cornflowerblue;">
+      <h2>Column 5</h2>
+      <p>Categories</p>
+      <hr>
+    </div>
+
+  </div>
+
+<script>
+
+// remove the reward
+$(".close").on("click", function(){
+  $(this).parent().remove();
+ 
+});
+
+// drag the boxes
+$('.drag1,.drag2,.drag3,.drag4,.drag5').draggable();
+
+$('#btn1').on('click',function(){
+
+	$('.drag1:first').draggable("destroy").clone(true).appendTo('.row');
+            
+  $('.drag1').draggable();
+  
+});
+
+$('#btn2').on('click',function(){
+	$('.drag2:first').draggable("destroy").clone(true).appendTo('.row');
+            
+  $('.drag2').draggable();
+});
+
+$('#btn3').on('click',function(){
+	$('.drag3:first').draggable("destroy").clone(true).appendTo('.row');
+            
+  $('.drag3').draggable();
+});
+$('#btn4').on('click',function(){
+	$('.drag4:first').draggable("destroy").clone(true).appendTo('.row');
+            
+  $('.drag4').draggable();
+});
+$('#btn5').on('click',function(){
+	$('.drag5:first').draggable("destroy").clone(true).appendTo('.row');
+            
+  $('.drag5').draggable();
+});
+
+</script>
+
+
+</body>
+</html>
